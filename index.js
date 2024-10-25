@@ -7,7 +7,7 @@ async function fetchBlogPosts() {
     postsList.innerHTML = ''; // Clear any existing posts
 
     try {
-        const response = await fetch('https://www.theoreticalstate.xyz/feeds/posts/default?alt=rss');
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxkwopOWjyLxioc8iRLgbyhQe_uE3FwBQomAku_bIYNwl-EYLMHW7PHmrrwopH6ltxb3A/exec');
         const text = await response.text();
         const parser = new DOMParser();
         const xml = parser.parseFromString(text, "text/xml");
