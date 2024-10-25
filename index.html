@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avery Belov | Personal Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/nes.css/css/nes.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="nes-container with-title">
+        <h1 class="title">Avery Belov</h1>
+        <p>Welcome to my personal site!</p>
+    </header>
+    <nav class="nes-container is-rounded">
+        <ul class="nes-list is-disc">
+            <li><a href="#about" class="nes-btn">About</a></li>
+            <li><a href="#blog" class="nes-btn">Blog</a></li>
+            <li><a href="#contact" class="nes-btn">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="nes-container is-rounded">
+            <h2>About Me</h2>
+            <p>Hello! I'm Avery Belov, a blogger based in Western New York. I explore political hypotheticals on my blog, Theoretical State, and enjoy diving into various topics that challenge conventional thinking.</p>
+        </section>
+        <section id="blog" class="nes-container is-rounded">
+                <h2>Blog</h2>
+                <p>Check out my blog, <a href="https://www.theoreticalstate.xyz" target="_blank">Theoretical State</a>, where I share my thoughts on political hypotheticals and other engaging topics.</p>
+                <h3>Latest Posts:</h3>
+                <div id="loading" class="nes-text is-warning" style="display: none;">Loading...</div>
+                <ul id="latest-posts" class="nes-list is-disc"></ul>
+        </section>
+
+
+        <section id="contact" class="nes-container is-rounded">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch or discuss ideas, feel free to reach out!</p>
+            <form action="https://formspree.io/f/mldedvdw" method="post" class="nes-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="nes-input" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="nes-input" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="nes-textarea" required></textarea>
+                
+                <button type="submit" class="nes-btn is-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="nes-container">
+        <p>&copy; 2024 Avery Belov</p>
+    </footer>
+    <script src="https://unpkg.com/nes.css/js/nes.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

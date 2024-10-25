@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Press Start 2P', cursive;
+    padding: 24px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
