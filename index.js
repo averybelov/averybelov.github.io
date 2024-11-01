@@ -7,7 +7,7 @@ async function fetchBlogPosts() {
     postsList.innerHTML = ''; // Clear any existing posts
 
     try {
-        const response = await fetch('http://45-56-108-13.ip.linodeusercontent.com/wp-json/wp/v2/posts?per_page=5');
+        const response = await fetch('http://www.theoreticalstate.xyz/wp-json/wp/v2/posts?per_page=5');
         const posts = await response.json();
 
         posts.forEach(post => {
